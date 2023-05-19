@@ -2,13 +2,12 @@ import React from "react";
 import PersonCard from "./PersonCard";
 
 function Tree({ data }) {
-	console.log(data);
-
 	return (
 		<>
 			<div>
-				{data.map((card) => (
+				{data.map((card, id) => (
 					<PersonCard
+						key={id}
 						name={card.name}
 						surName={card.surName}
 						male={card.male}
@@ -16,7 +15,7 @@ function Tree({ data }) {
 					/>
 				))}
 			</div>
-			;
+			<div></div>
 		</>
 	);
 }

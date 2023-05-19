@@ -1,3 +1,9 @@
+export function createSvgElement(tagName) {
+	return document.createElementNS("http://www.w3.org/2000/svg", tagName);
+}
+
+//--------------------------
+
 function recursiveFunc(structure) {
 	if (Array.isArray(structure)) {
 		structure.filter();

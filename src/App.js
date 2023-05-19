@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import Tree from "./components/Tree";
-import PersonCard from "./components/PersonCard";
+import LineChart from "./components/LineChart";
 
 function App() {
 	const [data, setData] = React.useState([
@@ -32,6 +32,7 @@ function App() {
 	return (
 		<>
 			<Tree data={data} />
+			<LineChart />
 		</>
 	);
 }
